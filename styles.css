@@ -1,0 +1,495 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+body{
+    background-color: #fffbf7 ;
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    color: #025157;
+    font-family: "Alegreya", serif;
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+h3{
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+.abajotitulo {
+    color: #46484c;
+    font-family: "Slabo 27px", serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.promocional {
+   color: red;
+
+}
+form {
+    height: 55px;
+  }
+  
+  input,
+  button {
+    height: 100%;
+    border-radius: 6px;
+  }
+  
+  input {
+    border: 1px solid #b6b6b6;
+    padding: 6px 20px;
+    width: 60%;
+    max-width: 250px;
+  }
+  
+  button {
+    background-color: #025157;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 6px 20px;
+    margin-left: -10px;
+  }
+
+
+nav ul {
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    padding: 1rem;
+}
+nav ul li:hover {
+    background-color: #e6e6e6;
+}
+nav ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+
+.contenedor-flex{ /* Contenedor padre donde desplegamos flexbox */
+    display: flex;/* Desplegamos flexbox  */
+    flex-direction: row;/* La direccion de los elementos va a ser en una fila */
+    justify-content: space-between;/* con este comando ponemos un elemento despues de otro */
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    background-color: white;
+}
+
+.letras-nav{ /* Primer Elemento de Flexbox */
+    text-align: center; /* Alineamos al centro todo el texto de los elementos dentro de esta clase  */
+    font-family: "Open Sans", sans-serif;/* Le damos estilo al texto dentro de la clase */
+    align-self: center;/* alineamos verticalmente el contenido de la clase */
+    flex:2 0 auto; /* asignamos el tamaño del contenido en 2 espacion con un shrink de 0 y un tamaño automatico */
+}
+.letras-nav ul li{ /* agregamos mayor especificidad y formato a los elementos en este caso a una lista hacerla horizontal*/
+    display: inline; /* con este comando hacemos que los elementos de una lista se muestren de manera horizontal  */
+}
+
+.form-sign{/* Clase que se refiere al formulario superior que se encuentra en la nav bar */
+    text-align: right;/* alineamos el texto a la derecha para que concuerde con la alineacion del boton */
+    font-weight: 1000;/*  especifica el grosor del texto*/
+    font-size: 16px;/* Especifica el tamaño del texto */
+    color: #67b54b;
+    padding-right: 20px;/* agregando un espacio entre la barra de navegacion para facilitar el manejo */
+}
+.form-sign a:hover{
+    color: cornflowerblue;
+}
+.form-sign button{/* clase con la especificidad para modificar el boton del formulario */
+    color: white; /* color del texto */
+    font-weight:700;/* grueso del texto */
+    font-size: 16px;/* tamaño de la fuente */
+    background-color: #67b54b;/* el color del boton */
+    padding-left: 14px;  /* DEFINIENDO EL TAMAÑO Y CONFIGURACION DEL BOTON */    
+    padding-right: 14px;/* DEFINIENDO EL TAMAÑO Y CONFIGURACION DEL BOTON */
+    padding-top: 12px;/* DEFINIENDO EL TAMAÑO Y CONFIGURACION DEL BOTON */
+    padding-bottom: 12px;/* DEFINIENDO EL TAMAÑO Y CONFIGURACION DEL BOTON */
+    border: 0; /* dejando el boton sin borde */
+    border-radius: 5px;/* le damos un redondel al boton */
+    margin-left: 10px;/* damos un espacio para ajustarlo con el texto de la izquierda */
+}
+.logo-nav{ /* otro elemento la clase donde se encuentra la imagen del logo superior de la navbar */
+    align-self: center;/* la ajustamos verticalmente para que coincida con los demas elementos */
+}
+
+.contenedor2{
+    margin-top: 285px;
+    text-align: center;
+}
+
+.figure{
+    display: block;
+}
+.promocional{
+    margin-top: 13px;
+}
+
+.logo-matcha img{
+    width: 70%;
+    margin-top: 33px;
+}
+
+/* PARTE 3 DE LA PAGINA LOS VIDEOS E INFORMACION */
+
+.video{
+    display: flex;
+    max-width: 70%;
+    margin: 100px auto;
+    align-items: center;
+    /* align-content: space-between; */
+}
+video{
+    object-fit: contain;
+}
+.publish >p{
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.explicacion-video{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinea elementos de la barra de controles del video*/
+}
+.explicacion-video img{
+    width: 120px;
+    margin-top: 10px;
+}
+article{
+    display: block;
+}
+.publish{
+    flex: 1;
+}
+.publish h3{
+    font-family: "Alegreya", serif ;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+    font-weight:  900;;
+}
+
+p{
+    color: #8b8b8bcc; 
+    margin-top: 15px;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+    /* 4 parte grid */
+.contenedor-tarjetas{
+    background-color: #025157;
+    padding: 5% 10%;
+    display: grid;
+    grid-template: repeat(2, 330px) / repeat(2, 1fr);
+}
+
+.contenedor-tarjetas .fe-cards{
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.contenedor-tarjetas .fe-cards .tarjeta-info{
+    
+    padding-top: 30px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    flex: 2;
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+.contenedor-tarjetas .fe-cards .tarjeta-info > *{
+    margin-bottom: 1rem;
+    margin-top: 0px;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-info img{
+    width: 50px;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-info h3{
+    font-size: 24px;
+    color: #343434;
+    font-weight: 400;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-info p{
+    font-size: 16px;
+    color: #7e7e7e;
+    font-weight: 400;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-info a{
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* SECCION 1 IMAGEN */
+
+.contenedor-tarjetas .fe-cards .tarjeta-imagen{
+    flex: 1;
+    width: 40%;
+    position: relative;
+    right: -50px;
+    height: 80%;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-imagen figure{
+    margin-top: 0px;
+    height: 100%;
+}
+.contenedor-tarjetas .fe-cards .tarjeta-imagen img{
+    margin-top: 0;
+    height: 100%;
+}
+
+
+/* seccion verde */
+
+
+.success-stories {
+    background-color: #a1d683;
+    padding: 5% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .success-stories .overview {
+    flex: 2;
+    padding-right: 100px;
+  }
+  
+  .success-stories .overview h2 {
+    font-family: "Alegreya", serif;
+    font-size: 51px;
+    line-height: 61px;
+    color: #025157;
+  }
+  
+  .success-stories .overview p {
+    color: #343434;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  .success-stories .overview button {
+    font-size: 14px;
+    padding: 12px 12px 6px 12px;
+    border-radius: 8px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0;
+  }
+  
+  .success-stories .overview img {
+    width: 500px;
+    max-width: 100%;
+  }
+  
+  .success-stories .stories-carousel {
+    flex: 1;
+  }
+  
+  .success-stories .stories-carousel .carousel-indicators {
+    position: unset;
+  }
+  
+  .success-stories .stories-carousel .card {
+    max-width: 370px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+  
+  .success-stories .stories-carousel .card .card-media img {
+    width: 100%;
+    max-height: 16vw;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .success-stories .stories-carousel .card .card-media figure {
+    margin-top: 0;
+  }
+  
+  .success-stories .stories-carousel .card .card-media {
+    position: relative;
+  }
+  
+  .success-stories .stories-carousel .card .card-media .company {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .success-stories .stories-carousel .card .card-media .company img {
+    max-width: 75%;
+  }
+  
+  .success-stories .stories-carousel .card .card-body,
+  .success-stories .stories-carousel .card .card-footer {
+    padding: 25px;
+  }
+  
+  .success-stories .stories-carousel .card .card-body h4 {
+    color: #025157;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    margin-bottom: 12px;
+  }
+  
+  .success-stories .stories-carousel .card .card-body h3 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .success-stories .stories-carousel .card .card-body .results {
+    display: flex;
+    align-items: center;
+    color: #828282;
+  }
+  
+  .success-stories .stories-carousel .card .card-body .results img {
+    width: 26px;
+    margin-right: 20px;
+  }
+  
+  .success-stories .stories-carousel .card .card-body .results p {
+    margin-top: 0;
+  }
+  
+  .success-stories .stories-carousel .card .card-footer {
+    margin-bottom: 20px;
+    background-color: unset;
+    border-top: unset;
+  }
+  
+  .success-stories .stories-carousel .card .card-footer button {
+    display: block;
+    margin-left: 0;
+    border-radius: 5px;
+    font-size: 13;
+    font-weight: 600;
+    padding: 12px 20px;
+    width: 100%;
+  }
+
+
+
+  /* Ajustes adaptativo */
+
+  @media (max-width: 425px) {
+    
+    .letras-nav,
+    .form-sign {
+      display: none;
+    }
+  
+    .logo-nav {
+      padding-left: 30%;
+      padding-top: 5%;
+    }
+  
+    .contenedor2 .texto-azul {
+      font-size: 35px;
+    }
+  
+    .contenedor2 {
+        display: flex;
+        flex-direction: column;
+      margin-top: 150px;
+      padding-left: 15%;
+      padding-top: 20px;
+    }
+  
+    .contenedor2 .banner > img {
+      width: 100%;
+    }
+  
+    .contenedor2 .logo-matcha {
+      display: none;
+    }
+  
+    .video {
+      flex-direction: column;
+      margin-top: 10px;
+      
+    }
+  
+    .video .explicacion-video > video {
+      width: 100%;
+      padding-left: 10%;
+    }
+  
+    .video .publish > h3 {
+      font-size: 30px;
+      line-height: 1.2;
+      text-align: center;
+      padding-left: 15%;
+    }
+  
+    .video .formulario {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin: auto;
+    }
+  
+    .contenedor-tarjetas {
+      grid-template: repeat(4, 1fr) / 1fr;
+      padding-left: 15%;
+      padding-right: 15%;
+    }
+  
+    .contenedor-tarjetas .tarjeta-imagen {
+      display: none;
+    }
+    
+  }
