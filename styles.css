@@ -226,9 +226,8 @@ p{
 }
 
 .contenedor-tarjetas .fe-cards .tarjeta-info{
-    
     padding-top: 30px;
-    padding-right: 20px;
+    padding-right: 0px;
     padding-bottom: 40px;
     padding-left: 40px;
     flex: 2;
@@ -245,12 +244,12 @@ p{
     width: 50px;
 }
 .contenedor-tarjetas .fe-cards .tarjeta-info h3{
-    font-size: 24px;
+    font-size: 20px;
     color: #343434;
     font-weight: 400;
 }
 .contenedor-tarjetas .fe-cards .tarjeta-info p{
-    font-size: 16px;
+    font-size: 14px;
     color: #7e7e7e;
     font-weight: 400;
 }
@@ -278,6 +277,16 @@ p{
     height: 100%;
 }
 
+/* cambiar icono sandwich de elemento */
+.navbar-light .nav-item .nav-link {
+  color: #025157;
+}
+.navbar-light .navbar-toggler {
+  border-color: #570202;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(3, 81, 77)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
 /* seccion verde */
 
@@ -322,119 +331,150 @@ p{
     width: 500px;
     max-width: 100%;
   }
-  
-  .success-stories .stories-carousel {
-    flex: 1;
-  }
-  
   .success-stories .stories-carousel .carousel-indicators {
-    position: unset;
+    position: initial; /** ó: position: static; */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin: 0 auto;
+    /* list-style: none; */
   }
-  
   .success-stories .stories-carousel .card {
-    max-width: 370px;
-    width: 100%;
+    width: 80%;
     background-color: #fff;
     border-radius: 10px;
-  }
-  
-  .success-stories .stories-carousel .card .card-media img {
-    width: 100%;
-    max-height: 16vw;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  
-  .success-stories .stories-carousel .card .card-media figure {
-    margin-top: 0;
-  }
-  
-  .success-stories .stories-carousel .card .card-media {
+    height: 565px;
+    color : #025157;
     position: relative;
   }
-  
-  .success-stories .stories-carousel .card .card-media .company {
+  .success-stories .stories-carousel .card .everly {
+    background-image: url('https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png');
+    height: 275px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .success-stories .stories-carousel .card .card-circle-everly {
     position: absolute;
-    bottom: -20px;
+    bottom: 255px;
     right: 20px;
     width: 100px;
     height: 100px;
-    background-color: #f9da73;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    overflow: hidden;
+    background-color: #f9da73;
+    background-image: url('https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 5px;
+    border: 5px solid #f9da73;
   }
-  
-  .success-stories .stories-carousel .card .card-media .company img {
-    max-width: 75%;
+  .card-container {
+    background-color: #a1d683;
+    padding: 35px;
   }
-  
-  .success-stories .stories-carousel .card .card-body,
-  .success-stories .stories-carousel .card .card-footer {
-    padding: 25px;
+  .comments {
+    text-align: left;
   }
-  
-  .success-stories .stories-carousel .card .card-body h4 {
+  .comments h1 {
     color: #025157;
-    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    font-family: "Alegreya", serif;
+    font-weight: 700;
+    font-size: 51px;
+    line-height: 61px;
+    letter-spacing: -2px;
+    color: #025157;
+  }
+  .comments .btn-beefy {
+    font-style: normal;
     font-weight: 600;
-    line-height: 20px;
-    margin-bottom: 12px;
+    font-size: 14px;
+    padding-top: 12px;
+    text-align: center;
+    color: #fff;
+    background: #025157;
+    border-radius: 8px;
+    height: 45px;
+    width: 166px;
+    transition: all .2s ease-in-out;
   }
-  
-  .success-stories .stories-carousel .card .card-body h3 {
-    font-size: 25px;
-    font-weight: 400;
-    line-height: 30px;
-    margin-bottom: 20px;
+  .comments .btn-beefy:hover {
+    background-color: #67b54b;
+    color: #fff;
   }
-  
-  .success-stories .stories-carousel .card .card-body .results {
-    display: flex;
-    align-items: center;
-    color: #828282;
+  .comments img {
+    width: 450px;
+    margin-top: 40px;
+    padding-right: 10px;
   }
-  
-  .success-stories .stories-carousel .card .card-body .results img {
-    width: 26px;
-    margin-right: 20px;
+  /* Bootstrap */
+
+  .logo-nav  {
+    /* width: 20%; */
+    text-align: left;
   }
-  
-  .success-stories .stories-carousel .card .card-body .results p {
-    margin-top: 0;
+  .logo-nav > img {
+    height: 100%;
   }
-  
-  .success-stories .stories-carousel .card .card-footer {
-    margin-bottom: 20px;
-    background-color: unset;
-    border-top: unset;
+  .letras-nav {
+    color: #025157;
+    font-weight: 500;
   }
-  
-  .success-stories .stories-carousel .card .card-footer button {
-    display: block;
-    margin-left: 0;
-    border-radius: 5px;
-    font-size: 13;
+  .form-sign{
+    /* width: 20%; */
+    text-align: right;
     font-weight: 600;
-    padding: 12px 20px;
-    width: 100%;
+    font-size: 14px;
   }
 
+
+  .header h5 {
+    color: #025157;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+  .header .platforms .btn-group {
+    padding: 4px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .header .platforms .btn-group button {
+    background-color: transparent;
+    color: #4b4b4b;
+    width: 160px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 1;
+    border: none;
+  }
+  .header .platforms .btn-group button.active {
+    background-color: white;
+    color: #67b54b;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  }
+  .header .platforms .btn-group button > img {
+    margin-right: 5px;
+  }
 
 
   /* Ajustes adaptativo */
 
   @media (max-width: 425px) {
     
-    .letras-nav,
-    .form-sign {
-      display: none;
-    }
-  
+   
     .logo-nav {
-      padding-left: 30%;
-      padding-top: 5%;
+      margin: 10%;
     }
   
     .contenedor2 .texto-azul {
@@ -442,15 +482,11 @@ p{
     }
   
     .contenedor2 {
-        display: flex;
-        flex-direction: column;
-      margin-top: 150px;
-      padding-left: 15%;
-      padding-top: 20px;
+       margin: 150px auto;
     }
   
     .contenedor2 .banner > img {
-      width: 100%;
+      width: 90%;
     }
   
     .contenedor2 .logo-matcha {
@@ -459,13 +495,12 @@ p{
   
     .video {
       flex-direction: column;
-      margin-top: 10px;
-      
+  
     }
   
     .video .explicacion-video > video {
       width: 100%;
-      padding-left: 10%;
+  
     }
   
     .video .publish > h3 {
@@ -484,12 +519,17 @@ p{
   
     .contenedor-tarjetas {
       grid-template: repeat(4, 1fr) / 1fr;
-      padding-left: 15%;
-      padding-right: 15%;
+      padding: 5% 0%;
     }
   
     .contenedor-tarjetas .tarjeta-imagen {
       display: none;
     }
+
+    .success-stories{
+      display: flex;
+      flex-direction: column;
+      
+    }
     
-  }
+  } 

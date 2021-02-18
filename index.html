@@ -1,8 +1,13 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <!-- bootstrap para el carrusel -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+    crossorigin="anonymous">
     <link
     rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,8 +24,45 @@
     <link rel="stylesheet" href="styles.css">
     <title>Matcha</title>
 </head>
+
+
 <header>
-    <div class="contenedor-flex">
+  <nav class=" navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid">
+      <a href="#" class="logo-nav">
+        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0  justify-content-sm-center letras-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Platform</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Customers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">About</a>
+          </li>
+        </ul>
+        <form class="d-flex form-inline my-2 my-lg-0 
+        justify-content-center actions form-sign">
+          <a>Sign In</a>
+          <button>Start free trial</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<!--     <div class="contenedor-flex">
         <div class=" logo-nav"> 
             <a href="">
                  <img
@@ -42,9 +84,10 @@
         <button>Start a free Trial</button> </a>
         </form>
   </div>
-</header>
+</header> -->
 <body> 
-    <div class="contenedor2"> <!-- inicio contenedor 1 -->
+ 
+    <div class="contenedor2"> <!-- inicio contenedor 1  -->
     <h1 class="texto-azul"> Build your blog. Build your business.</h1>
         <p class="abajotitulo">Instantly publish articles, <strong> more traffic </strong>, grow your
                     email list, and see your blog’s impact on sales.</p>
@@ -65,7 +108,9 @@
         <figure class="logo-matcha"> 
              <img src="https://getmatcha.com/wp-content/uploads/2019/09/intro_group_image.png" alt="Imegn de Introduccion">
         </figure>
-    </div><!-- fin contenedor 2 -->
+    </div> 
+    
+    <!-- fin contenedor 2 -->
     <div class="video"><!-- contenedor del video y texto primer uso flex -->
         <article class="explicacion-video">
          <video controls
@@ -177,120 +222,133 @@
         </article>
     </div>
     <!-- 4 contenedor verde -->
-    <section class="success-stories">
-        <article class="overview">
-          <h2>Growing ecommerce brands rely on Matcha.</h2>
-          <p>
-            Are you tired of wasting time publishing blog articles to only see a
-            trickle of traffic and no impact on sales? Join hundreds of business
-            owners and ecommerce marketers who rely on Matcha for quality content
-            and consistent performance from their blogs.
-          </p>
-          <button>
-            Who Uses Matcha?
-          </button>
-          <figure>
-            <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="Brands">
-          </figure>
-        </article>
-        <article class="stories-carousel">
-          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="card-media">
-                    <figure>
-                      <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png" alt="Everly worker">
-                    </figure>
-                    <div class="company">
-                      <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png" alt="Everly">
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <h4>Everly</h4>
-                    <h3>
-                      Early-Stage CPG Brand Increases Lead Conversion 20x,
-                      Ecommerce Revenue 20%
-                    </h3>
-                    <div class="results">
-                      <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_cart.png" alt="Cart icon">
-                      <p>22% of monthly revenue influenced by content</p>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <button>See Case Study</button>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item active">
-                <div class="card">
-                  <div class="card-media">
-                    <figure>
-                      <img src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg" alt="Seato Summit worker">
-                    </figure>
-                    <div class="company">
-                      <img src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png" alt="Seato Summit Logo">
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <h4>Sea to Summit</h4>
-                    <h3>
-                      Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New
-                      Subscribers 820%
-                    </h3>
-                    <div class="results">
-                      <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_audiences.png" alt="Audience icon">
-                      <p>500% increase in traffic from social media</p>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <button>See Case Study</button>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="card">
-                  <div class="card-media">
-                    <figure>
-                      <img src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png" alt="Mambe workers">
-                    </figure>
-                    <div class="company">
-                      <img src="https://getmatcha.com/wp-content/uploads/2019/06/mambe-logo-1.png" alt="Mambe">
-                    </div>
-                  </div>
-                  <div class="card-body">
-                    <h4>Mambe Waterproof Blankets</h4>
-                    <h3>
-                      How Mambe Increased Conversions by 327%, Reduced CPL by 60%
-                    </h3>
-                    <div class="results">
-                      <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_target.png" alt="Target icon">
-                      <p>+327% more popup conversions at a 60% lower cost</p>
-                    </div>
-                  </div>
-                  <div class="card-footer">
-                    <button>See Case Study</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleFade" data-slide-to="0" class=""></li>
-              <li data-target="#carouselExampleFade" data-slide-to="1" class="active"></li>
-              <li data-target="#carouselExampleFade" data-slide-to="2" class=""></li>
-            </ol>
+    <section class="card-container">
+      <div class="container">
+        <div class="row p-2">
+          <div class="col-md-6 col-sm-12 comments">
+            <h1>Growing ecommerce brands rely on Matcha.</h1>
+            <p>
+              You know it's true: ecommerce businesses succeed when they meaningfully connect with their customers
+              across
+              all channels. The catch? Creating content that fuels that connection takes a lot of time. Time you
+              probably
+              don't have. Until now.
+              Join hundreds of ecommerce marketers who rely on Matcha for reader conversion tools, content analytics,
+              and
+              quality articles to fuel their customer engagement channels and see consistent performance from their
+              blogs.
+            </p>
+            <a class="btn btn-beefy">Who uses Matcha?</a>
+            <img src="https://getmatcha.com/wp-content/uploads/2020/04/logos-matcha.png" alt="logos" />
           </div>
-        </article>
-      </section>
+          <div class="col-md-6 col-sm-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card">
+                    <div class="card-media">
+                      <figure>
+                        <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png" alt="Everly worker">
+                      </figure>
+                      <div class="company">
+                        <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png" alt="Everly">
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h4>Everly</h4>
+                      <h3>
+                        Early-Stage CPG Brand Increases Lead Conversion 20x,
+                        Ecommerce Revenue 20%
+                      </h3>
+                      <div class="results">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_cart.png" alt="Cart icon">
+                        <p>22% of monthly revenue influenced by content</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <button>See Case Study</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div class="card-media">
+                      <figure>
+                        <img src="https://getmatcha.com/wp-content/uploads/2019/08/0.jpg" alt="Seato Summit worker">
+                      </figure>
+                      <div class="company">
+                        <img src="https://getmatcha.com/wp-content/uploads/2019/08/SeatoSummitLogo.png" alt="Seato Summit Logo">
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h4>Sea to Summit</h4>
+                      <h3>
+                        Sea to Summit’s Ecommerce Site Traffic Climbs 189%, New
+                        Subscribers 820%
+                      </h3>
+                      <div class="results">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_audiences.png" alt="Audience icon">
+                        <p>500% increase in traffic from social media</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <button>See Case Study</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card">
+                    <div class="card-media">
+                      <figure>
+                        <img src="https://getmatcha.com/wp-content/uploads/2019/06/matt-and-margaret_headshot.png" alt="Mambe workers">
+                      </figure>
+                      <div class="company">
+                        <img src="https://getmatcha.com/wp-content/uploads/2019/06/mambe-logo-1.png" alt="Mambe">
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h4>Mambe Waterproof Blankets</h4>
+                      <h3>
+                        How Mambe Increased Conversions by 327%, Reduced CPL by 60%
+                      </h3>
+                      <div class="results">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_target.png" alt="Target icon">
+                        <p>+327% more popup conversions at a 60% lower cost</p>
+                      </div>
+                    </div>
+                    <div class="card-footer">
+                      <button>See Case Study</button>
+                    </div>
+                  </div>
+            
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+           </div>
+        </div>
+      </div>
     
+    
+    </section>
+    
+
+     
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
     <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
